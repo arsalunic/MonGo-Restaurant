@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Directory: /Tutorial03/</title>
+		
+		<link href="common.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="source.js"></script>
+
+	</head>
+<body>
+	<div id="header"><h1>Restaurant Recipes!</h1></div>
+	
+	<form onsubmit="return formSubmit(this);">
+		<div >
+			<h3>Recipe</h3>
+		</div>
+		<select name="recipe_select" id="recipe_select"></select>
+		<br>
+		<button onclick="view()">View</button>
+		<button onclick="doSubmit()">Submit</button>
+
+		<br><br><br>
+
+		<label>Duration:</label><br>
+		<input type="number" name="duration" id="duration"><br>
+
+		<label>Ingredients:</label><br>
+		<textarea rows="5" cols="100" type="text" name="ingredients" id="ingredients"></textarea><br>
+
+		<label>Steps:</label><br>
+		<textarea rows="5" cols="100" type="text" name="steps" id="steps"></textarea><br>
+
+		<label>Notes:</label><br>
+		<textarea rows="4" cols="30" type="text" name="notes" id="notes"></textarea><br>
+	</form>
+
+</body>
+</html>
